@@ -7,14 +7,16 @@ def main(n):
         string: return  answer
     """
     list1 = ' '
-    list = []
+    list = [] 
     for i in range(n):
         # list.append(i)
         if i == 0:
-            list1 += str(i)
+            list1 += '"' + str(i)
+        elif i == n - 1:
+            list1 += ',' + str(i) + '"'
         else:
             list1 += ','+ str(i)
     return str(list1)
 
-x = main(3)
+x = main(30)
 print(x)
