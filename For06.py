@@ -8,15 +8,16 @@ def main(A,B):
         int: return  answer
     """
     sum = 0
+    #   if A < 0 and B < 0:
     if A < 0:
         for i in range(B):
-                if i == abs(A-1):
-                    sum += i
+                if i >= abs(A-1):
+                    sum += i 
     else: 
         for i in range(B):        
             if i >= A:
                 sum += i
     return sum
 
-x = main(3, 6)
+x = main(-4, 6)
 print(x)
