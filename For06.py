@@ -7,4 +7,16 @@ def main(A,B):
     Returns:
         int: return  answer
     """
-    return
+    sum = 0
+    if A < 0:
+        for i in range(B):
+                if i == abs(A-1):
+                    sum += i
+    else: 
+        for i in range(B):        
+            if i >= A:
+                sum += i
+    return sum
+
+x = main(3, 6)
+print(x)
