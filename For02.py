@@ -6,4 +6,10 @@ def main(n):
     Returns:
         string: return  answer
     """
-    return
+    list = ''
+    for i in range(n):
+        list += str(i)
+    return list
+
+x = main(3)
+print(x)
