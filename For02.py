@@ -6,10 +6,15 @@ def main(n):
     Returns:
         string: return  answer
     """
-    list = ''
+    list1 = ' '
+    list = []
     for i in range(n):
-        list += str(i)
-    return list
+        # list.append(i)
+        if i == 0:
+            list1 += str(i)
+        else:
+            list1 += ','+ str(i)
+    return str(list1)
 
 x = main(3)
 print(x)
