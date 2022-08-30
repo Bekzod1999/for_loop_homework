@@ -6,4 +6,11 @@ def main(N):
     Returns:
         int: return  answer
     """
-    return
+    sum = 0
+    for i in range(N):
+        if i%2:
+            sum += i
+    return sum
+
+x=main(12)
+print(x)
