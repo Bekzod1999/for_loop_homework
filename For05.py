@@ -7,4 +7,11 @@ def main(A,B):
     Returns:
         list: return  answer
     """
-    return
+    list1 = []
+    for i in range(B+1):
+        if i >= A:
+            list1.append(i)
+    return list1[-1::-1]
+
+x =main(5, 9)
+print(x)
